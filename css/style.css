@@ -1046,7 +1046,6 @@ video {
 .thumbnail_container {
   margin-top: 5px;
   width: 100%;
-
   margin: 32px auto;
 }
 
@@ -1129,6 +1128,20 @@ video {
   text-align: center;
 }
 
+.pro-img {
+  margin-top: 15px;
+  height: 88px;
+  width: 190px;
+}
+
+.pro-head {
+  font-size: 19px;
+  font-weight: 500;
+}
+
+.zoom-img {
+  padding-top: 50px;
+}
 .fes4-cont {
   padding-top: 130px;
   padding-bottom: 80px;
@@ -1158,7 +1171,7 @@ video {
 }
 .section-title {
   margin: 0;
-  padding: 22px 25px 24px 25px;
+  padding: 25px 25px 24px 25px;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   font-weight: 300;
   font-size: 30px;
@@ -1186,6 +1199,38 @@ video {
   line-height: 32px;
   color: #4b4e53;
   border-left: #4b4e53 2px solid;
+}
+
+.bg-box {
+  min-height: 347px;
+  max-height: 450px;
+  position: relative;
+  transition: 0.5s all;
+}
+.bg-box:hover > .overlay {
+  opacity: 1;
+}
+.overlay {
+  z-index: 11;
+  padding: 10px;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.9);
+  opacity: 0;
+  width: 100%;
+  transition: 0.5s all;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.overlay h4 {
+  color: #fff;
+}
+.overlay a {
+  margin-top: 5px;
+  position: absolute;
+  bottom: 40px;
 }
 .p-50-cont {
   padding-top: 50px;
@@ -1931,7 +1976,7 @@ table.shopping-cart-table tr th {
 }
 .lightbox-item:hover .port-img-overlay:after,
 .port-item:hover .port-img-overlay:after {
-  background: rgba(16, 16, 16, 0.85);
+  background: rgba(206, 15, 15, 0.85);
 }
 .lightbox-item .port-img-overlay:after,
 .port-item .port-img-overlay:after {
@@ -2016,14 +2061,16 @@ table.shopping-cart-table tr th {
   text-align: center;
 }
 .port-view-more {
+  width: 100%;
   display: block;
-  padding-top: 40px;
-  padding-bottom: 37px;
+  padding-top: 25px;
+  padding-bottom: 23px;
   background: #eee;
   font-family: Lato, Arial, Helvetica, sans-serif;
   font-size: 18px;
   line-height: 18px;
   font-weight: 100;
+
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
@@ -2031,6 +2078,20 @@ table.shopping-cart-table tr th {
 .port-view-more:hover {
   background: #dedede;
   color: #4b4e53;
+}
+
+.port-view-more1 {
+  display: block;
+  padding-top: 40px;
+  padding-bottom: 37px;
+  background: #eee;
+
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 100;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 .port-view-more-cont-dark {
   text-align: center;
@@ -11612,6 +11673,12 @@ ul#flickr-sfeeds li a img {
   margin-bottom: 60px;
   color: rgba(255, 255, 255, 0.7);
 }
+
+.social-links i {
+  padding: 5px 42px;
+  color: #207bd6;
+}
+
 .footer-portfolio-link {
   font-size: 10px;
   color: rgba(255, 255, 255, 0.38);
