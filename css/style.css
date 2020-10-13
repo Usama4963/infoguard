@@ -3488,7 +3488,6 @@ select.input-border {
   padding-left: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  left: 0;
   right: 0;
   width: 100%;
   z-index: 900;
@@ -3513,6 +3512,11 @@ nav ul {
   font-weight: 300;
   color: #fff;
   border-bottom: 1px solid #585a5f;
+}
+
+.menuservices {
+  column-count: 2;
+  grid-row-end: 5;
 }
 .megamenu .box.col-md-2,
 .megamenu .box.col-md-3,
